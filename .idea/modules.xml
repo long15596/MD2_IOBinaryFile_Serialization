@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CopyFile/CopyFile.iml" filepath="$PROJECT_DIR$/CopyFile/CopyFile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/MD2_IOBinary File _ Serialization.iml" filepath="$PROJECT_DIR$/.idea/MD2_IOBinary File _ Serialization.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ReadAndWriteData/ReadAndWriteData.iml" filepath="$PROJECT_DIR$/ReadAndWriteData/ReadAndWriteData.iml" />
+    </modules>
+  </component>
+</project>
