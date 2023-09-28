@@ -1,34 +1,34 @@
 package dto;
 
-import student.Student;
+import products.Products;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 public class ReadAndWrite {
-    public static void writeFile(String path, List<Student> students) {
-        try {
+    public static void writeFile(List<Products> products, String path) {
+        try{
             FileOutputStream fos = new FileOutputStream(path);
             ObjectOutputStream oos = new ObjectOutputStream(fos);
-            oos.writeObject(students);
+            oos.writeObject(products);
             oos.close();
             fos.close();
-        }catch (IOException e) {
-            e.printStackTrace();
+        } catch (IOException exception) {
+            exception.printStackTrace();
         }
     }
-    public static List<Student> readFile(String path) {
-        List<Student> students = new ArrayList<>();
+    public static List<Products> readFile(String path) {
+        List<Products> products = new ArrayList<>();
         try {
             FileInputStream fis = new FileInputStream(path);
             ObjectInputStream ois = new ObjectInputStream(fis);
+            products = (List<Products>) ois.readObject();
             fis.close();
             ois.close();
         } catch (Exception exception) {
             exception.printStackTrace();
         }
-        return students;
+        return products;
     }
 }
